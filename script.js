@@ -26,7 +26,7 @@ function playGame() {
     }
 
     function getHumanChoice() {
-        let ans = prompt("Enter your choice");
+        let ans = prompt("Enter your choice") || "rock";
         return (ans.toLowerCase()).replace(/\s+/g, '');
     }
 
@@ -58,4 +58,4 @@ function playGame() {
     (humanScore > computerScore) ? console.log("Congrats! You win!") : console.log("Oh no! You lost!");
 }
 
-playGame();
+//playGame();
